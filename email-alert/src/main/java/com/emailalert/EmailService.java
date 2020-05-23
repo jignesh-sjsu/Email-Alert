@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class EmailService {
 
-    public void sendMail(String sender, String receiver, String subject, String message, String templateName) {
+    public void sendMail(String sender, String[] receiver, String subject, String message, String templateName) {
         Mail mail = new Mail();
         mail.setMailFrom(sender);
         mail.setMailTo(receiver);
@@ -19,7 +19,7 @@ public class EmailService {
         mailer.sendCustomMail(mail);
     }
 
-    public void sendJobMail(String sender, String receiver, ScheduleJob job) {
+    public void sendJobMail(String sender, String[] receiver, ScheduleJob job) {
         Mail mail = new Mail();
         mail.setMailFrom(sender);
         mail.setMailTo(receiver);

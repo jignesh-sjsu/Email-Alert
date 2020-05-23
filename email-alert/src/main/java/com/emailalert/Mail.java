@@ -5,9 +5,9 @@ import java.util.Date;
 public class Mail {
 
     private String mailFrom;
-    private String mailTo;
-    private String mailCc;
-    private String mailBcc;
+    private String[] mailTo;
+    private String[] mailCc;
+    private String[] mailBcc;
     private String mailSubject;
     private String mailContent;
     private String templateName;
@@ -25,7 +25,7 @@ public class Mail {
         this.contentType = contentType;
     }
 
-    public String getMailBcc() {
+    public String[] getMailBcc() {
         return mailBcc;
     }
 
@@ -37,15 +37,15 @@ public class Mail {
         this.templateName = templateName;
     }
 
-    public void setMailBcc(String mailBcc) {
+    public void setMailBcc(String[] mailBcc) {
         this.mailBcc = mailBcc;
     }
 
-    public String getMailCc() {
+    public String[] getMailCc() {
         return mailCc;
     }
 
-    public void setMailCc(String mailCc) {
+    public void setMailCc(String[] mailCc) {
         this.mailCc = mailCc;
     }
 
@@ -65,11 +65,11 @@ public class Mail {
         this.mailSubject = mailSubject;
     }
 
-    public String getMailTo() {
+    public String[] getMailTo() {
         return mailTo;
     }
 
-    public void setMailTo(String mailTo) {
+    public void setMailTo(String[] mailTo) {
         this.mailTo = mailTo;
     }
 
