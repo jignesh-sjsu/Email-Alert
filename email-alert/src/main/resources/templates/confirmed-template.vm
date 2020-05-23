@@ -1,0 +1,13 @@
+
+Your job was successfully completed.
+
+Job Information:
+JobId: ${jobId}
+JobName: ${jobName}
+UserName: ${userName}
+Start Time Stamp: ${startTimeStamp}
+End Time Stamp: ${endTimeStamp}
+Status: ${status}
+
+Regards,
+SWE DEV
